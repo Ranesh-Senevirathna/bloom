@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blooming Delights Flower Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="Delight.png" alt="Blooming Delights Logo">
+                <h1>Blooming Delights</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#featured">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <a href="#" class="btn btn-light" onclick="openModal('loginModal')">Login</a>
+                <a href="#" class="btn btn-accent" onclick="openModal('registerModal')">Register</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Bringing Nature's Beauty to Your Doorstep</h2>
+                <p>Discover the finest selection of fresh flowers, bouquets, and arrangements for every occasion. Crafted with love and delivered with care.</p>
+                <a href="#featured" class="btn btn-accent">Shop Now</a>
+            </div>
+            <div class="hero-image">
+                <img src="Unknown-6.jpg" alt="Beautiful Flower Arrangement">
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="featured" class="featured">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Best Sellers</h2>
+            </div>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Red roses bouquet (1).jpg" alt="Rose Bouquet">
+                    </div>
+                    <div class="product-info">
+                        <h3>Elegant Rose Bouquet</h3>
+                        <p>A stunning arrangement of fresh roses in various colors.</p>
+                        <div class="product-price">$49.99</div>
+                        <button class="btn btn-accent" onclick="openModal('orderModal')">Order Now</button>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Unknown-8.jpg" alt="Lilies Arrangement">
+                    </div>
+                    <div class="product-info">
+                        <h3>Lily Symphony</h3>
+                        <p>Fragrant lilies arranged with seasonal greens and accents.</p>
+                        <div class="product-price">$59.99</div>
+                        <button class="btn btn-accent" onclick="openModal('orderModal')">Order Now</button>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Unknown-9.jpg" alt="Tulip Bouquet">
+                    </div>
+                    <div class="product-info">
+                        <h3>Tulip Treasure</h3>
+                        <p>Vibrant tulips in a playful and colorful arrangement.</p>
+                        <div class="product-price">$39.99</div>
+                        <button class="btn btn-accent" onclick="openModal('orderModal')">Order Now</button>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="png.png" alt="Mixed Bouquet">
+                    </div>
+                    <div class="product-info">
+                        <h3>Seasonal Surprise</h3>
+                        <p>A mix of seasonal flowers arranged in our signature style.</p>
+                        <div class="product-price">$45.99</div>
+                        <button class="btn btn-accent" onclick="openModal('orderModal')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container about-container">
+            <div class="about-image">
+                <img src="Unknown-5.jpg" alt="Our Flower Shop">
+            </div>
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>Welcome to Blooming Delights, where floral artistry meets passion. Established in 2015, we're a team of dedicated florists with a love for nature's most beautiful creations.</p>
+                <p>Our mission is to bring the joy and beauty of fresh flowers into your everyday life and special occasions. We source our flowers from local and sustainable farms to ensure the highest quality and freshness.</p>
+                <p>From weddings and anniversaries to sympathy arrangements and spontaneous gestures, we put our heart into every creation. Each arrangement is carefully crafted by hand, with attention to detail and artistic flair.</p>
+                <a href="#contact" class="btn btn-accent">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>We'd love to hear from you! Whether you have a question about our products, need help with an order, or want to discuss a custom arrangement, our team is here to help.</p>
+                
+                <div class="contact-details">
+                    <div>
+                        <i>📞</i>
+                        <p>(123) 456-7890</p>
+                    </div>
+                    <div>
+                        <i>✉️</i>
+                        <p>hello@bloomingdelights.com</p>
+                    </div>
+                    <div>
+                        <i>🏠</i>
+                        <p>123 Flower Street, Garden City, State 12345</p>
+                    </div>
+                    <div>
+                        <i>🕒</i>
+                        <p>Monday - Saturday: 9AM - 6PM<br>Sunday: 10AM - 4PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3>Send us a Message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-accent">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Blooming Delights</h3>
+                    <p>Bringing nature's beauty to your doorstep since 2015. Quality flowers, exceptional service.</p>
+                    <div class="social-links">
+                        <a href="#"><span>FB</span></a>
+                        <a href="#"><span>IG</span></a>
+                        <a href="#"><span>TW</span></a>
+                        <a href="#"><span>PI</span></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#featured">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Delivery Information</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+                    <form id="newsletterForm">
+                        <div class="form-group">
+                            <input type="email" placeholder="Enter your email" required>
+                        </div>
+                        <button type="submit" class="btn btn-accent">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Blooming Delights. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Login</h2>
+                <button class="close-btn" onclick="closeModal('loginModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="loginEmail">Email Address</label>
+                        <input type="email" id="loginEmail" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <a href="#" style="color: var(--primary-color);">Forgot Password?</a>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-accent" onclick="submitLogin()">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Create an Account</h2>
+                <button class="close-btn" onclick="closeModal('registerModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="registerName">Full Name</label>
+                        <input type="text" id="registerName" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerEmail">Email Address</label>
+                        <input type="email" id="registerEmail" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPhone">Phone Number</label>
+                        <input type="tel" id="registerPhone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">Password</label>
+                        <input type="password" id="registerPassword" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-accent" onclick="submitRegistration()">Register</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Place Your Order</h2>
+                <button class="close-btn" onclick="closeModal('orderModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="orderForm">
+                    <div class="form-group">
+                        <label for="recipientName">Recipient's Name</label>
+                        <input type="text" id="recipientName" name="recipientName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="deliveryAddress">Delivery Address</label>
+                        <input type="text" id="deliveryAddress" name="deliveryAddress" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="deliveryDate">Delivery Date</label>
+                        <input type="date" id="deliveryDate" name="deliveryDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="specialInstructions">Special Instructions</label>
+                        <textarea id="specialInstructions" name="specialInstructions"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-accent" onclick="submitOrder()">Place Order</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
